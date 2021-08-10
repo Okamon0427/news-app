@@ -1,14 +1,8 @@
-import Head from 'next/head';
 import ArticleList from '../components/ArticleList';
 
 export default function Home({ articles }) {
   return (
-    <div>
-      <Head>
-        <title>Webdev News</title>
-        <meta name='keywords' content='web devlopment, programming' />
-      </Head>
-      
+    <div>      
       <ArticleList articles={articles} />
     </div>
   )

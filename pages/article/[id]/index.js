@@ -3,6 +3,7 @@ import Link from 'next/link';
 const article = ({ article }) => {
   return (
     <>
+      
       <h1>This is an article {article.id}</h1>
       <p>{article.body}</p>
       <br />
