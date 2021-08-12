@@ -1,19 +1,17 @@
+import { Container } from "@chakra-ui/react"
+import Header from './Header';
 import Nav from './Nav';
 import Meta from './Meta';
-import Header from './Header';
-import styles from '../styles/Layout.module.css';
 
 const Layout = ({ children }) => {
   return (
     <>
       <Meta />
+      <Header />
       <Nav />
-      <div className={styles.container}>
-        <main className={styles.main}>
-          <Header />
-          {children}
-        </main>
-      </div>
+      <Container maxW="container.lg">
+        {children}
+      </Container>
     </>
   )
 }

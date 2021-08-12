@@ -1,15 +1,12 @@
-import styles from '../styles/Header.module.css';
+import { Box, Container } from "@chakra-ui/react"
 
 const Header = () => {
   return (
-    <div>
-      <h1 className={styles.title}>
-        <span>WebDev</span> News
-      </h1>
-      <p className={styles.description}>
-        Keep up to date with the latest web dev news
-      </p>
-    </div>
+    <Container maxW="container.lg" centerContent>
+      <Box padding="4" bg="gray.100" maxW="3xl">
+        LATEST NEWS
+      </Box>
+    </Container>
   )
 }
 
