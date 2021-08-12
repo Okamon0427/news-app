@@ -1,13 +1,13 @@
+import { Grid } from "@chakra-ui/react"
 import ArticleItem from './ArticleItem';
-import styles from '../styles/Article.module.css';
 
 const ArticleList = ({ articles }) => {
   return (
-    <div className={styles.grid}>
+    <Grid templateColumns="repeat(2, 1fr)" gap={6}>
       {articles.map((article) => (
         <ArticleItem key={article.id} article={article} />
       ))}
-    </div>
+    </Grid>
   )
 }
 
