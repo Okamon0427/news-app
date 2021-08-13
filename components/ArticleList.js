@@ -3,7 +3,7 @@ import ArticleItem from './ArticleItem';
 
 const ArticleList = ({ articles }) => {
   return (
-    <Grid templateColumns="repeat(2, 1fr)" gap={6}>
+    <Grid templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)"]} gap={6}>
       {articles.map((article, i) => (
         <ArticleItem key={i} article={article} />
       ))}
