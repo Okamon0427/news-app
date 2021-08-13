@@ -1,11 +1,12 @@
-import { Box } from "@chakra-ui/react"
+import { Box, Image, Flex } from "@chakra-ui/react"
 import Link from 'next/link';
 
 const ArticleItem = ({ article }) => {
   return (
-    <Box p="4" maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
-      <Link href='/article/[id]' as={`/article/${article.id}`}>
-        <a>
+    <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
+      <a href={article.url} target="_blank">
+        <Image src={article.urlToImage} />
+        <Box p="4">
           <Box
             fontWeight="semibold"
             as="h4"
@@ -14,11 +15,16 @@ const ArticleItem = ({ article }) => {
           >
             {article.title}
           </Box>
-          <Box>
-            {article.body}
+          <Box my="2">
+            {article.description}
           </Box>
-        </a>
-      </Link>
+          <Box as="span" color="gray.600" fontSize="sm">
+            <Flex>
+              {article.source.name} / {article.publishedAt}
+            </Flex>
+          </Box>
+        </Box>
+      </a>
     </Box>
   )
 }

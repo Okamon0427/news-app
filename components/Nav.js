@@ -8,7 +8,7 @@ const Nav = () => {
         <Container>
           <Center>
             <Text fontSize="3xl">
-              Latest News
+              Latest News App
             </Text>
           </Center> 
         </Container>
@@ -16,7 +16,7 @@ const Nav = () => {
       <Flex pb={2} px={4} bg="tomato" color="white">
         <Container>
           <Flex align="center" justify="space-between">
-            <Link href='/'>Home</Link>
+            <Link href='/'>Canada</Link>
             <Link href='/about'>About</Link>
           </Flex>
         </Container>

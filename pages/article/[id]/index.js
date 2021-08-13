@@ -1,13 +1,19 @@
-import Link from 'next/link';
+import { Box } from "@chakra-ui/react"
 
 const article = ({ article }) => {
   return (
-    <>
-      <h1>This is an article {article.id}</h1>
-      <p>{article.body}</p>
-      <br />
-      <Link href='/'>Go Back</Link>
-    </>
+    <Box p="4" maxW="xl" borderWidth="1px" borderRadius="lg" overflow="hidden">
+      <Box
+        fontWeight="semibold"
+        as="h4"
+        lineHeight="tight"
+      >
+        {article.title}
+      </Box>
+      <Box>
+        {article.body}
+      </Box>
+    </Box>
   )
 }
 

@@ -5,7 +5,7 @@ const ArticleList = ({ articles }) => {
   return (
     <Grid templateColumns="repeat(2, 1fr)" gap={6}>
       {articles.map((article) => (
-        <ArticleItem key={article.id} article={article} />
+        <ArticleItem article={article} />
       ))}
     </Grid>
   )
