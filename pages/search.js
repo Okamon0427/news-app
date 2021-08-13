@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Container, Button, FormControl, FormLabel, Input } from "@chakra-ui/react"
 import ArticleList from '../components/ArticleList';
 
-const search = () => {
+const Search = () => {
   const [keyword, setKeyword] = useState('');
   const [articles, setArticles] = useState([]);
   const [message, setMessage] = useState(null);
@@ -49,4 +49,4 @@ const search = () => {
   )
 }
 
-export default search;
+export default Search;
