@@ -1,22 +1,16 @@
-# Study Abroad!
-Test
+# Latest News App
+Many latest articles, such as technology, business, health, and sports, can be seen in the app. On top of that, you can search articles that has specific topic by using search function.
 
 ---
 ## URL
 https://latest-news-app.vercel.app/
 
 ## Images
-#### Landing Page
-![Landing Page](./uploads/top.JPG)
+#### Articles
+![Articles](./public/news.JPG)
 
-#### School List Page
-![School List Page](./uploads/school-list.JPG)
-
-#### School Detail Page
-![School Detail Page](./uploads/school-detail.JPG)
-
-#### Profile Page
-![Profile Page](./uploads/profile.JPG)
+#### Search Function
+![Search Function](./public/search.JPG)
 
 ## Getting Started
 - copy this project into your local machine
