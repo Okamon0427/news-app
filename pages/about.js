@@ -3,7 +3,7 @@ import Meta from '../components/Meta';
 const about = () => {
   return (
     <div>
-      <Meta title='about' />
+      <Meta title='About' />
       <h1>About Page</h1>
     </div>
   )

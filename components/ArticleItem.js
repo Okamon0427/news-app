@@ -1,7 +1,26 @@
 import { Box, Image, Flex } from "@chakra-ui/react"
-import Link from 'next/link';
+
+const parseDate = (d) => {
+  const parsedDate = new Date(d);
+  const year = parsedDate.getFullYear();
+  let month = parsedDate.getMonth() + 1;
+  let date = parsedDate.getDate();
+  let hour = parsedDate.getHours();
+  let minute = parsedDate.getMinutes();
+  
+  if (date < 10) {
+    date = '0' + date;
+  }
+  if (month < 10) {
+    month = '0' + month;
+  }
+
+  return year + '-' + month + '-' + date + ' ' + hour + ':' + minute;
+}
 
 const ArticleItem = ({ article }) => {
+  const newDate = parseDate(article.publishedAt);
+
   return (
     <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
       <a href={article.url} target="_blank">
@@ -20,7 +39,7 @@ const ArticleItem = ({ article }) => {
           </Box>
           <Box as="span" color="gray.600" fontSize="sm">
             <Flex>
-              {article.source.name} / {article.publishedAt}
+              {article.source.name} / {newDate}
             </Flex>
           </Box>
         </Box>

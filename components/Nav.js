@@ -14,9 +14,13 @@ const Nav = () => {
         </Container>
       </Flex>
       <Flex pb={2} px={4} bg="tomato" color="white">
-        <Container>
+        <Container maxW="container.md">
           <Flex align="center" justify="space-between">
             <Link href='/'>Canada</Link>
+            <Link href='/category/technology'>Technology</Link>
+            <Link href='/category/business'>Business</Link>
+            <Link href='/category/health'>Health</Link>
+            <Link href='/category/sports'>Sports</Link>
             <Link href='/about'>About</Link>
           </Flex>
         </Container>
