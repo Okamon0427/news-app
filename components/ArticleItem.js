@@ -23,7 +23,7 @@ const ArticleItem = ({ article }) => {
 
   return (
     <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
-      <a href={article.url} target="_blank">
+      <a href={article.url} target="_blank" rel="noreferrer">
         <Image src={article.urlToImage} />
         <Box p="4">
           <Box
