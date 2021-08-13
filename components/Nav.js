@@ -35,8 +35,8 @@ const Nav = () => {
             <span className={router.asPath === "/category/sports" ? styles.active : ""}>
               <Link href='/category/sports'>Sports</Link>
             </span>
-            <span className={router.asPath === "/about" ? styles.active : ""}>
-              <Link href='/about'>About</Link>
+            <span className={router.asPath === "/search" ? styles.active : ""}>
+              <Link href='/search'>Search</Link>
             </span>
           </Flex>
         </Container>
