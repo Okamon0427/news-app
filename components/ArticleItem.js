@@ -14,6 +14,12 @@ const parseDate = (d) => {
   if (month < 10) {
     month = '0' + month;
   }
+  if (hour < 10) {
+    hour = '0' + hour;
+  }
+  if (minute < 10) {
+    minute = '0' + minute;
+  }
 
   return year + '-' + month + '-' + date + ' ' + hour + ':' + minute;
 }

@@ -1,4 +1,4 @@
-import { Center, Container, Flex, Text } from "@chakra-ui/react"
+import { Center, Container, Flex, Text } from "@chakra-ui/react";
 import Link from 'next/link';
 
 const Nav = () => {
@@ -15,7 +15,7 @@ const Nav = () => {
       </Flex>
       <Flex pb={2} px={4} bg="tomato" color="white">
         <Container maxW="container.md">
-          <Flex align="center" justify="space-between">
+          <Flex fontSize={["0.7rem", "1rem"]} align="center" justify="space-between">
             <Link href='/'>Canada</Link>
             <Link href='/category/technology'>Technology</Link>
             <Link href='/category/business'>Business</Link>
